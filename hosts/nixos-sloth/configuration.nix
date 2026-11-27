@@ -10,11 +10,8 @@
 
   boot.loader.grub = {
     enable = true;
-    efiSupport = true;
-    efiInstallAsRemovable = true;
-    device = "nodev";
+    device = "/dev/sda";
   };
-  boot.loader.efi.efiSysMountPoint = "/boot";
 
   services.openssh = {
     enable = true;
