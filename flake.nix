@@ -20,7 +20,7 @@
         ${hostName} = {
           deployment.targetHost = hostName;
           deployment.targetUser = "root";
-          deployment.buildOnTarget = false;
+          deployment.buildOnTarget = true;
 
           imports = [
             disko.nixosModules.disko
