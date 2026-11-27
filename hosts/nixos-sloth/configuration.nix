@@ -8,10 +8,7 @@
   networking.hostName = "nixos-sloth";
   networking.useDHCP = true;
 
-  boot.loader.grub = {
-    enable = true;
-    device = "/dev/sda";
-  };
+  boot.loader.grub.enable = true;
 
   services.openssh = {
     enable = true;
