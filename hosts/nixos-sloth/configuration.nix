@@ -24,7 +24,12 @@
 
   networking.firewall.allowedTCPPorts = [ 22 ];
 
-  #virtualisation.docker.enable = true;
+  virtualisation.docker = {
+    enable = true;
+    daemon.settings = {
+      "registry-mirrors" = [ "https://docker.m.daocloud.io" ];
+    };
+  };
 
   environment.systemPackages = with pkgs; [
     nettools
